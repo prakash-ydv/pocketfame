@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background-color: #090736;
+}
+
+header{
+    margin-top: 10px;
+    margin: 5px;
+    border: 2px solid #6893ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: calc(100vw-10px);
+    height: 8vh;
+}
+
+.logo h1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.menu ul li {
+    list-style: none;
+}
+.menu ul li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.hero{
+    margin-left: 25vw;
+    margin-top: 12px;
+    height: 30vh;
+    width: 50vw;
+    background-image: url(icons8-instagram-256.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.warning{
+    padding: 12px;
+    margin-top: 15px;
+    height: 8vh;
+    width: 40vw;
+    color: rgb(253, 10, 10);
+    margin-left: calc(30vw - 12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 25px;
+    bottom: 0;
+    position: absolute;
+    height: 30vh;
+    max-width: 70vw ;
+    left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn{
+    cursor: pointer;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #6893ff;
+    height: 8vh;
+    width: 50vw;
+}
+
+.btn_container .btn :hover{
+    background-color: #6893ff;
+}
+
+@media screen and (max-width:650px){
+    .menu{
+        display: none;
+    }
+
+    .hero{
+        background-size: cover;
+    }
+
+    .warning{
+        width: 70vw;
+        margin-left: calc(15vw - 12px);
+    }
+}
